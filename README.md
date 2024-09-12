@@ -19,3 +19,4 @@ This project demonstrates how to efficiently perform incremental data loading us
 - Perform the Initial load (Full Load), By loading the table into the DBFS in delta format (load).
 - Note the maximum modified date into another delta table (watermark_table)
 - When the new data arrives compare the date from watermark_table and store the new data into the old table (load).
+- Update the watermark_table with the new maximum modified table.
